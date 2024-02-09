@@ -1,0 +1,49 @@
+body {
+    background : white;
+    height: 100vh;
+    width: 100%;
+    
+    
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+  
+  .card:hover img {
+    transform: scale(1.2);
+    filter: brightness(0.7);
+  }
+  
+  .card:hover .card-body {
+    transform: translateY(-50%);
+  }
+  
+  .card-img-top {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: translateY(0%);
+  }
+  
+  .card-body h5,
+  .card-body p {
+    margin: 0;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+  }
+  
+  
